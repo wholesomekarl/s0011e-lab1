@@ -2,10 +2,13 @@
 #include <iostream>
 #include <typeinfo>
 
+// reset color
+#define RESET   "\033[0m"
+
 Character::Character(const std::string& charName)
     : name(charName),
     currentState(nullptr),
-    hunger(50), energy(50), money(0), socialNeed(50),
+    hunger(0), energy(100), money(0), socialNeed(0),
     canHangOutFlag(false) {}
 
 void Character::changeState(std::unique_ptr<State> newState) {
@@ -71,7 +74,7 @@ void Character::checkMessages() {
         Message msg = inbox.front();
         inbox.pop();
         std::cout <<"\033[32m" << "[message] " << msg.sender << " to " << msg.receiver
-            << ": " << msg.content << "\033[32m" << "\n";
+            << ": " << msg.content << RESET << "\n";
     }
 }
 
@@ -82,6 +85,6 @@ void Character::printStatus() const {
         << ", energy: " << energy
         << ", money: " << money
         << ", social need: " << socialNeed
-        << "\033[34m" << "\n";
+        << RESET << "\n";
 }
 

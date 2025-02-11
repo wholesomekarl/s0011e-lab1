@@ -1,6 +1,7 @@
 ﻿  Character.cpp
+  main.cpp
   Generating code
   Previous IPDB and IOBJ mismatch, fall back to full compilation.
-  All 426 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  All 425 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
   Finished generating code
-  task 1.vcxproj -> C:\Users\schel\source\repos\Task 1\x64\Release\task 1.exe
+  task 1.vcxproj -> C:\Users\schel\Documents\GitHub\s0011e-lab1\task 1\x64\Release\task 1.exe

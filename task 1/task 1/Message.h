@@ -4,7 +4,7 @@
 
 #include <string>
 
-// Simple struct for passing messages
+// simple struct for passing messages
 struct Message {
     std::string sender;
     std::string receiver;
